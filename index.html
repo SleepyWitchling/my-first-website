@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>陈小欣 · 简历</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei";
+}
+
+body {
+    background: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* 导航 */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10,10,10,0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+    z-index: 1000;
+    border-bottom: 1px solid #00ffaa33;
+}
+
+.nav a {
+    color: #aaa;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.nav a.active, .nav a:hover {
+    background: #00ffaa22;
+    color: #00ffaa;
+}
+
+/* 滑块 */
+.slider {
+    display: flex;
+    width: 600vw;
+    height: 100vh;
+    transition: transform 0.8s ease;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    padding: 100px 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 首页居中 */
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+/* 卡片 */
+.card {
+    background: rgba(20,20,30,0.8);
+    border: 1px solid #00ffaa33;
+    border-radius: 15px;
+    padding: 26px;
+    margin: 16px 0;
+    box-shadow: 0 0 20px rgba(0,255,170,0.08);
+}
+
+.card h2 {
+    color: #00ffaa;
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.card p, .card li {
+    color: #ddd;
+    line-height: 1.8;
+}
+
+/* 头像 */
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #00ffaa;
+    box-shadow: 0 0 25px #00ffaa66;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+/* 按钮 */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    background: #00ffaa;
+    color: #000;
+    font-weight: bold;
+}
+
+/* 技能块 */
+.skill-block {
+    margin-bottom: 20px;
+}
+
+.skill-block h3 {
+    color: #00ffaa;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 导航 -->
+<nav class="nav">
+    <a href="#" class="active" data-page="0">🏠 首页</a>
+    <a href="#" data-page="1">👤 关于我</a>
+    <a href="#" data-page="2">💼 实习经历</a>
+    <a href="#" data-page="3">🛠️ 专业技能</a>
+    <a href="#" data-page="4">🏆 竞赛 & 校园</a>
+    <a href="#" data-page="5">📄 下载简历</a>
+</nav>
+
+<!-- 页面 -->
+<div class="slider">
+
+    <!-- 首页 -->
+    <div class="page center">
+        <div class="avatar">🌸</div>
+        <h1 style="color:#00ffaa;">陈小欣</h1>
+        <p>会计学 · 大数据会计 · CPA 备考中</p>
+        <p>武汉 · 随时到岗 · 5 天到岗</p>
+        <p>📞 137‑9727‑0069</p>
+        <p>✉️ 3940181838@qq.com</p>
+        <a class="btn" href="https://hunyuan.tencent.com/api/resource/download?resourceId=e7212a864926352e40426801eef925fc"
+           target="_blank" download="陈小欣-简历.pdf">
+            📄 下载 PDF 简历
+        </a>
+    </div>
+
+    <!-- 关于我 -->
+    <div class="page">
+        <h1 style="color:#00ffaa;text-align:center;">关于我</h1>
+
+        <div class="card">
+            <h2>自我介绍</h2>
+            <p>
+                我是一名兼具会计专业能力与数据分析思维的本科生，
+                性格踏实、细致、有责任感，注重数据的准确性与保密性。
+                在学习和实践中，我始终保持主动思考的习惯，
+                不只完成任务，更愿意去思考“为什么要这样做”以及“有没有更好的方式”。
+                目前正在系统备考 CPA，希望在专业道路上走得更稳、更远。
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>教育背景</h2>
+            <p><strong>湖北经济学院 · 会计学（大数据会计创新实验班）</strong></p>
+            <p>2024.09 – 至今</p>
+            <ul>
+                <li>荣誉：优秀新生奖学金 · 优秀学生干部 · 藏龙学子奖学金</li>
+                <li>证书：CET‑4（570+）· CET‑6 · 初级会计职称</li>
+                <li>主修课程涵盖会计、审计、财务管理、Python数据分析与智能会计系统</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>自我评价</h2>
+            <ul>
+                <li>做事踏实、细心，有较强的责任心和执行力</li>
+                <li>具备良好的团队协作意识和跨部门沟通能力</li>
+                <li>对数据敏感，逻辑思维清晰，持续学习意愿强</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 实习经历 -->
+    <div class="page">
+        <h1 style="color:#00ffaa;text-align:center;">实习经历</h1>
+        <div class="card">
+            <h2>湖北金算会计师事务有限公司 · 审计助理</h2>
+            <p><strong>2025.07 – 2025.09</strong></p>
+            <ul>
+                <li>抽查原始凭证与记账凭证 2000+ 张，核验货币资金、原材料等科目</li>
+                <li>参与合同查验，评估是否存在重大错报风险</li>
+                <li>独立编制货币资金、固定资产、存货等审计底稿</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 专业技能 -->
+    <div class="page">
+        <h1 style="color:#00ffaa;text-align:center;">专业技能</h1>
+
+        <div class="card skill-block">
+            <h3>📊 会计与审计</h3>
+            <ul>
+                <li>熟悉会计核算流程与审计基本程序</li>
+                <li>掌握审计底稿编制与实质性测试逻辑</li>
+                <li>了解企业会计准则与财务风险识别</li>
+            </ul>
+        </div>
+
+        <div class="card skill-block">
+            <h3>🐍 数据分析与技术工具</h3>
+            <ul>
+                <li>Python：用于财务数据清洗、分析与可视化</li>
+                <li>Excel：熟练使用函数、透视表与图表分析</li>
+                <li>用友 U8：具备智能会计信息系统操作经验</li>
+            </ul>
+        </div>
+
+        <div class="card skill-block">
+            <h3>📑 语言与综合素养</h3>
+            <ul>
+                <li>英语 CET‑6，具备良好的英文阅读与写作能力</li>
+                <li>学术写作能力：完成调研论文并发表于《藏龙论坛》</li>
+                <li>具备良好的团队协作与跨部门沟通能力</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 竞赛 & 校园 -->
+    <div class="page">
+        <h1 style="color:#00ffaa;text-align:center;">竞赛 & 校园</h1>
+
+        <div class="card">
+            <h2>科研立项</h2>
+            <p><strong>新质生产力背景下高校会计人才培养模式转型研究</strong></p>
+            <ul>
+                <li>基于文献研究与实地调研，分析数智化对会计人才能力的新要求</li>
+                <li>构建“专业知识 + 数据分析 + 综合素质”三维能力框架</li>
+                <li>提出课程改革与实训体系优化建议</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>竞赛获奖</h2>
+            <ul>
+                <li>大学生创新创业大赛：校一等奖 · 最佳创新奖</li>
+                <li>“挑战杯”竞赛：校铜奖</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>校园经历</h2>
+            <p><strong>暑期社会实践 · 队长</strong></p>
+            <ul>
+                <li>统筹团队分工与调研方案设计，协调跨校访谈与数据采集</li>
+                <li>主导论文撰写，成果发表于《藏龙论坛》期刊</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 下载简历 -->
+    <div class="page center">
+        <h1 style="color:#00ffaa;">下载简历</h1>
+        <div class="card">
+            <p>点击下方按钮，可下载完整 PDF 简历</p>
+            <a class="btn" href="https://hunyuan.tencent.com/api/resource/download?resourceId=e7212a864926352e40426801eef925fc"
+               target="_blank" download="陈小欣-简历.pdf">
+                📥 下载 PDF 简历
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+let current = 0;
+const slider = document.querySelector('.slider');
+const navs = document.querySelectorAll('.nav a');
+
+navs.forEach((a, i) => {
+    a.onclick = e => {
+        e.preventDefault();
+        current = i;
+        slider.style.transform = `translateX(-${current * 100}vw)`;
+        navs.forEach(n => n.classList.remove('active'));
+        a.classList.add('active');
+    };
+});
+</script>
+
+</body>
+</html>
